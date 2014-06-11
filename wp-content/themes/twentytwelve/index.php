@@ -16,11 +16,6 @@
 
 get_header(); ?>
 
-<select onchange="swi_lan()" id="swi">
-  <option value ="english"><?php echo swi('EN');?></option>
-  <option value ="china">Ch</option>
-</select>
-
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 		<?php if ( have_posts() ) : ?>
@@ -69,12 +64,3 @@ get_header(); ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type='text/javascript'>
-function swi_lan()
-{
-	var lan = $('#swi').val();
-	alert(lan);
-}
-</script>
